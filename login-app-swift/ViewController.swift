@@ -13,7 +13,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    @IBAction func LoginBtn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(
+            name: "Login",
+            bundle: nil)
+        let loginVC = storyboard.instantiateViewController(
+            withIdentifier: "LoginViewController")
+        self.present(loginVC, animated: true, completion: nil)
+    }    
 }
 
