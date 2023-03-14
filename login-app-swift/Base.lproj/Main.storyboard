@@ -16,23 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-8f-1tD">
-                                <rect key="frame" x="76" y="612" width="125" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="LOGIN">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-8w-lZs">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-8w-lZs">
                                 <rect key="frame" x="209" y="612" width="125" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule">
                                     <backgroundConfiguration key="background" strokeWidth="2">
                                         <color key="strokeColor" systemColor="labelColor"/>
@@ -49,19 +34,30 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="DQ9-5O-dW5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="DQ9-5O-dW5">
                                 <rect key="frame" x="43" y="81" width="338" height="338"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to sales TOP A Platform To Manage a Real State Needs." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DaY-tj-Cst">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to sales TOP A Platform To Manage a Real State Needs." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DaY-tj-Cst">
                                 <rect key="frame" x="117" y="508" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Rzn-fJ-3Yq"/>
+                                </constraints>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnh-vu-WVH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="HELLO!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-pO-3Zo">
+                                <rect key="frame" x="117" y="435" width="180" height="53"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="WcV-In-FSh"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-8f-1tD">
                                 <rect key="frame" x="76" y="612" width="125" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
@@ -74,24 +70,20 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="LoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUV-cX-MAk"/>
-                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="HELLO!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-pO-3Zo">
-                                <rect key="frame" x="146" y="435" width="132" height="53"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="BFJ-zC-SGV"/>
-                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e6G-6P-Far"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NaO-pO-3Zo" secondAttribute="trailing" constant="146" id="o5k-K8-MKv"/>
+                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EIY-Do-7Pb"/>
+                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="leading" secondItem="DaY-tj-Cst" secondAttribute="leading" id="J60-OB-1zc"/>
+                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="top" secondItem="DQ9-5O-dW5" secondAttribute="bottom" constant="16" id="Pgq-dc-6NZ"/>
+                            <constraint firstItem="DaY-tj-Cst" firstAttribute="top" secondItem="NaO-pO-3Zo" secondAttribute="bottom" constant="20" id="YiT-sE-Abe"/>
+                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="bBi-7a-4Uh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zyx-8w-lZs" secondAttribute="trailing" constant="80" id="jE0-qv-2sW"/>
+                            <constraint firstItem="DQ9-5O-dW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="pXL-q4-eMg"/>
+                            <constraint firstItem="DQ9-5O-dW5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="yjI-ho-hoV"/>
+                            <constraint firstItem="NaO-pO-3Zo" firstAttribute="trailing" secondItem="DaY-tj-Cst" secondAttribute="trailing" id="zhu-hs-gZg"/>
                         </constraints>
                     </view>
                 </viewController>
