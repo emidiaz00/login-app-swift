@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-8w-lZs">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-8w-lZs">
                                 <rect key="frame" x="209" y="612" width="125" height="53"/>
                                 <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule">
                                     <backgroundConfiguration key="background" strokeWidth="2">
@@ -57,9 +57,8 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-8f-1tD">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72f-8f-1tD">
                                 <rect key="frame" x="76" y="612" width="125" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
                                     <attributedString key="attributedTitle">
                                         <fragment content="LOGIN">
@@ -75,14 +74,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DaY-tj-Cst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="3ym-Xn-8lj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQ9-5O-dW5" secondAttribute="trailing" constant="33" id="6Pz-zZ-YeM"/>
+                            <constraint firstItem="Zyx-8w-lZs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CLH-Ub-MFK"/>
                             <constraint firstItem="NaO-pO-3Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EIY-Do-7Pb"/>
                             <constraint firstItem="NaO-pO-3Zo" firstAttribute="leading" secondItem="DaY-tj-Cst" secondAttribute="leading" id="J60-OB-1zc"/>
+                            <constraint firstItem="Zyx-8w-lZs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MFQ-9K-Wu8"/>
+                            <constraint firstItem="DaY-tj-Cst" firstAttribute="bottom" secondItem="72f-8f-1tD" secondAttribute="bottom" id="OiD-Du-1ok"/>
                             <constraint firstItem="NaO-pO-3Zo" firstAttribute="top" secondItem="DQ9-5O-dW5" secondAttribute="bottom" constant="16" id="Pgq-dc-6NZ"/>
                             <constraint firstItem="DaY-tj-Cst" firstAttribute="top" secondItem="NaO-pO-3Zo" secondAttribute="bottom" constant="20" id="YiT-sE-Abe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NaO-pO-3Zo" secondAttribute="trailing" constant="117" id="ZJL-8Q-y0D"/>
                             <constraint firstItem="NaO-pO-3Zo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="bBi-7a-4Uh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DaY-tj-Cst" secondAttribute="trailing" constant="117" id="eCd-9U-QVl"/>
+                            <constraint firstItem="Zyx-8w-lZs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fez-O8-j22"/>
+                            <constraint firstItem="72f-8f-1tD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hcs-Jh-X3u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zyx-8w-lZs" secondAttribute="trailing" constant="80" id="jE0-qv-2sW"/>
                             <constraint firstItem="DQ9-5O-dW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="pXL-q4-eMg"/>
                             <constraint firstItem="DQ9-5O-dW5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="yjI-ho-hoV"/>
+                            <constraint firstItem="72f-8f-1tD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="z20-Bg-l3M"/>
                             <constraint firstItem="NaO-pO-3Zo" firstAttribute="trailing" secondItem="DaY-tj-Cst" secondAttribute="trailing" id="zhu-hs-gZg"/>
                         </constraints>
                     </view>
